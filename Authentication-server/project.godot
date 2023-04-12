@@ -28,3 +28,7 @@ Settings="*res://singletons/settings.gd"
 
 file_logging/enable_file_logging.pc=false
 file_logging/log_path="logs/chimera-auth-server.log"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"

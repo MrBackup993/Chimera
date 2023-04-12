@@ -1,0 +1,5 @@
+# Godot 4+ specific ignores
+.godot/
+settings.ini
+export_presets.cfg
+bannedIPes.txt

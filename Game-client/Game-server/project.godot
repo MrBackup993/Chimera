@@ -10,22 +10,27 @@ config_version=5
 
 [application]
 
-config/name="Chimera-gateway-server"
-run/main_scene="res://gateway.tscn"
+config/name="chimera_game_server"
+run/main_scene="res://Scenes/Main/main.tscn"
 config/features=PackedStringArray("4.0", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
-GatewayClient="*res://singletons/gateway_client.gd"
-AuthGateway="*res://singletons/auth_gateway.gd"
-Security="*res://singletons/security.gd"
+GameserverClient="*res://singletons/gameserver_client.gd"
+AuthGameserver="*res://singletons/auth_gameserver.gd"
 Settings="*res://singletons/settings.gd"
 
 [debug]
 
 file_logging/enable_file_logging.pc=false
-file_logging/log_path="logs/chimera-gateway.log"
+file_logging/log_path="logs/chimera_server.log"
+
+[display]
+
+window/size/viewport_width=640
+window/size/viewport_height=480
+window/stretch/mode="viewport"
 
 [rendering]
 
